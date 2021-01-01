@@ -8,6 +8,8 @@ namespace GradeBook.Enums
     {
         Standard,
         Ranked,
-        ESNU
+        ESNU,
+        OneToFour,
+        SixPoint
     }
 }
