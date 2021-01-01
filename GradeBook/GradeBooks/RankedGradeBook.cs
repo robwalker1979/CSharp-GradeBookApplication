@@ -43,10 +43,6 @@ namespace GradeBook.GradeBooks
             {
                 return 'D';
             }
-            else if (averageGrade >= eGradeMin)
-            {
-                return 'E';
-            }
             else 
             {
                 return 'F';
@@ -65,7 +61,7 @@ namespace GradeBook.GradeBooks
         private int CalculateBandSize()
         {
             var numberOfStudents = this.Students?.Count ?? 0;
-            return Convert.ToInt32(Math.Floor(numberOfStudents * 0.2));
+            return Convert.ToInt32(Math.Ceiling(numberOfStudents * 0.2));
         }
     }
 }
